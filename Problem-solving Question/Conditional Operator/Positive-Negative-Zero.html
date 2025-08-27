@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=Number(prompt("Enter any number: "));
+
+        if(a<0){
+            console.log("Negative Number");
+        }
+        else if(a==0){
+            console.log("Number is Zero.");
+        }
+        else{
+            console.log("Number is positive: ",a);
+        }
+
+        // 2nd way to print 
+
+
+        let result = a<0 ? `Negative Number: ${a}`:(a===0 ? `number is zero: ${a}` : `Number is Postive: ${a}`);
+        console.log("Result is= ",result);
+
+        // 3rd way
+
+        switch(Math.sign(a))
+        {
+            case 1:
+                console.log("Postive");
+                break;
+            case -1:
+                console.log("Negative");
+                break;
+            case 0:
+                console.log("Zero");
+                break;
+            default:
+                console.log("Invalid input");
+        }
+    </script>
+</body>
+</html>
