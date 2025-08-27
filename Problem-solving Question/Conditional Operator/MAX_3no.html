@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=Number(prompt("Enter 1st Number: "));
+        let b=Number(prompt("Enter 2nd Number: "));
+        let c=Number(prompt("Enter 3rd Number: "));
+        // 1st way to find 
+        let max1= (a>b) ? (a>c ? a:c) : (b>c ? b:c);
+        // 2nd way to find
+        if((a>b)&&(a>c)){
+            console.log(`Maximum 1st Number: ${a}`);
+        }
+        else if(b>a&&b>c){
+            console.log(`Maximum 2nd Number: ${b}`);
+        }
+        else{
+            console.log(`Maximum 3rd Number: ${c}`);
+        }
+
+        // 3rd way to find out 
+        let max2 = Math.max(a,b,c);
+
+        console.log(`maximum no: ${max1}`);
+        console.log(`maximum: ${max2}`);
+    </script>
+</body>
+</html>
