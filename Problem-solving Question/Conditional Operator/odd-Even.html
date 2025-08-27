@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check number is Odd or Even</title>
+</head>
+<body>
+    <h1>Check the number is Odd and Even.</h1>
+    <script>
+        let num = Number(prompt("Enter any random Number: "));
+        // 1st way to write
+        if(num%2==0){
+            console.log("Even Number: ",num);
+        }
+        else{
+            console.log("Odd Number: ",num);
+        }
+        //2nd way to write 
+        let result = num %2==0 ? "Even No" : "Odd no";
+        console.log(result);
+    </script>
+</body>
+</html>
