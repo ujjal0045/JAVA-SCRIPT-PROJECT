@@ -10,11 +10,16 @@
         let year=Number(prompt("Enter any random year"));
 
         if(year%4==0&&year%100!=0){
-            console.log("Leap year: ",year);
+            console.log("1. Leap year: ",year);
         }
         else{
-            console.log("Not an leap year: ",year);
+            console.log("1. Not an leap year: ",year);
         }
+        // 2nd way
+
+        let isleap = (year % 4 === 0 && year % 100!=0)|| (year % 400 === 0);
+        let message = isleap ? `2. Leap Year: ${year}` : `2. Not an leap year: ${year}`;
+        console.log(message);
     </script>
 </body>
 </html>
