@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let notes= Number(prompt("Enter the notes:  "));
+        console.log("Amount : ",notes);
+        let c=0,r;
+        while(notes != 0){
+            if(notes >= 500){
+                r = Math.floor(notes / 500);
+                console.log(`500: ${r}`);
+                notes = notes % 500;
+                r=0
+            }else if(notes >= 100){
+                r = Math.floor(notes / 100);
+                console.log(`100: ${r}`);
+                notes = notes % 100;
+                r=0
+            } else if( notes >= 50){
+                r = Math.floor(notes / 50);
+                console.log(`50: ${r}`);
+                notes = notes % 50;
+                r=0
+            } else if(notes >= 20){
+                r = Math.floor(notes / 20);
+                console.log(`20: ${r}`);
+                notes = notes % 20;
+                r=0
+            }
+            else if(notes >= 10){
+                r = Math.floor(notes / 10);
+                console.log(`10: ${r}`);
+                notes = notes % 10;
+                r=0
+            } else if(notes >= 5){
+                r = Math.floor(notes / 5);
+                console.log(`5: ${r}`);
+                notes = notes % 5;
+                r=0
+            } else if(notes>=2){
+                r = Math.floor(notes / 2);
+                console.log(`2 : ${r}`);
+                notes = notes % 2;
+                r=0
+            } else {
+                r = Math.floor(notes / 1);
+                console.log(`1: ${r}`);
+                notes = notes % 1;
+                r=0
+            }
+        }
+    </script>
+</body>
+</html>
