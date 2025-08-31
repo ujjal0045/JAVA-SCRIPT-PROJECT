@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = Number(prompt("Enter the month( 1 - 12 ): "));
+
+        if(num == 1 ||num == 3 ||num == 5 ||num ==7 ||num == 8||num == 10||num == 12){
+            console.log("31 Days");
+        }
+        else if(num === 2){
+            console.log("28-29 Days");
+        }
+        else if(num === 4 || num === 6 || num === 9 || num === 11){
+            console.log("30 Days");
+        }
+        else{
+            console.log("Enter the month: -");
+        }
+
+        // 2nd way using array:-
+
+        const days=[31,28,31,30,31,30,31,31,30,31,30,31];
+        if(num >= 1 && num <=12){
+            if(num === 2){
+                console.log("...28 days");
+            } else{
+                console.log(`...${days[num-1]} days`);
+            }
+        }
+        else{
+                console.log("...Invaild month...")
+            }
+    </script>
+</body>
+</html>
