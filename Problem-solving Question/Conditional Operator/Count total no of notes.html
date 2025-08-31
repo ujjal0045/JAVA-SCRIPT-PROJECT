@@ -8,6 +8,7 @@
 <body>
     <script>
         let notes= Number(prompt("Enter the notes:  "));
+        let note = notes;
         console.log("Amount : ",notes);
         let c=0,r;
         while(notes != 0){
@@ -52,6 +53,18 @@
                 console.log(`1: ${r}`);
                 notes = notes % 1;
                 r=0
+            }
+        }
+
+
+        // 2nd method
+
+        const cash=[500,200,100,50,20,10,5,2,1];
+        for(let n of cash){
+            let r = Math.floor(note/n);
+            if(r > 0){
+                console.log(`2.  ${n} : ${r}`);
+                note = note%n;
             }
         }
     </script>
