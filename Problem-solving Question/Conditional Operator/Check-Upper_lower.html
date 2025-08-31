@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str=prompt("Enter the alphabet: ");
+        if(str.length !== 1){
+            alert("Please enter only one alphabet:-");
+        }
+        //else if(str>="A" && str <= "Z")
+        else if(/[A-Z]$/.test(str)){
+            console.log("Uppercase Character.");
+        }
+        // else if(str>="a" && str<="z")
+        else if(/[a-z]$/.test(str)){
+            console.log("LowerCase Character.");
+        }
+        else{
+            console.log("Please enter an alphabet, not an any other character. ")
+        }
+    </script>
+</body>
+</html>
