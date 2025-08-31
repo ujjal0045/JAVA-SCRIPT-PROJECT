@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = Number(prompt("Enter the number of 1st angle: "));
+        let b = Number(prompt("Enter the number of 2nd angle: "));
+        let c = Number(prompt("Enter the number of 3rd angle: "));
+
+        if(a+b>c){
+            if(b+c>a){
+                if(a+c>b){
+                    console.log("Triangle is valid");
+                }else{
+                    console.log("Triangle is not valid");
+                }
+            }else{
+                    console.log("Triangle is not valid");
+                }
+        }else{
+                    console.log("Triangle is not valid");
+                }
+    </script>
+</body>
+</html>
