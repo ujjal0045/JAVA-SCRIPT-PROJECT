@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = 153;
+        let digits = n.toString();
+        let power = digits.length;
+        let sum = 0;
+
+        for(let i =0;i<power;i++){
+            let d = Number(digits[i]);
+            sum = sum + Math.pow(d,power);
+        }
+        if(n == sum){
+            alert("Armstrong Number:-");
+        } else{
+            alert("Not an Armstrong Number:-");
+        }
+    </script>
+</body>
+</html>
