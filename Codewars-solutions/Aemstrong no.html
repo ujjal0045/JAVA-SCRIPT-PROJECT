@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function narcissistic(value) {
+    let digits = value.toString();
+    let p = digits.length;
+    let sum = 0;
+    for (let i = 0; i < p; i++) {
+        let d = Number(digits[i]);
+        sum += Math.pow(d, p);
+    }
+    return sum === value;  // ✅ return true/false
+}
+
+    </script>
+</body>
+</html>
