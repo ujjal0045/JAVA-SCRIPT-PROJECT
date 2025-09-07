@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function longest(s1, s2) {
+          // your code
+        let ar1=s1.split("");
+        let ar2 = s2.split("");
+        let result="";
+        for(let i=0;i<ar1.length;i++){
+            if(!result.includes(ar1[i])){
+                result += ar1[i];
+            }
+        }
+        for(let j=0;j<ar2.length;j++){
+            if(!result.includes(ar2[j])){
+                result += ar2[j];
+            }
+        }
+        result = result.split("").sort().join("");
+        return result;
+        }
+
+        // 2nd way to solve the problem
+        function lon(s1,s2){
+            let result = s1 + s2; // first marge both string 
+            let a = ""; // make unique stirng where only store unique alphabet
+            for(let i=0;i<result.length;i++){
+                if(!a.includes(result[i]))  // check if already added or not
+                {
+                    a+=result[i]; // if not added then add
+                }
+            }
+            return a.split("").sort().join(""); // sort + join
+        }
+
+
+        let s1 ="xyaabbbccccdefww";
+        let s2 = "xxxxyyyyabklmopq";
+        console.log(`1st = ${longest(s1,s2)}`);
+        console.log(`2nd = ${lon(s1,s2)}`);
+    </script>
+</body>
+</html>
