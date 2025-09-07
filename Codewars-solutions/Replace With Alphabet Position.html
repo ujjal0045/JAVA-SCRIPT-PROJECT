@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function str(s){
+            let result=[];
+            for(let i=0;i<s.length;i++)
+            {
+                let ch= s[i].toLowerCase();
+                if(ch>="a"&&ch<="z"){
+                    result.push(ch.charCodeAt(0) - 96);
+                }
+            }
+            return result.join(" ");
+        }
+        console.log(str("The sunset sets at twelve o' clock."));
+    </script>
+</body>
+</html>
